@@ -9,7 +9,38 @@ body {
 }
 
 .poker-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     background-color: white;
     width: 20rem;
     height: 30rem;
+    border-radius: 1rem;
+}
+
+.suit > span {
+    font-size: 4rem;
+}
+
+.face-value { 
+    display: flex;
+    justify-content: center;
+}
+
+.face-value > h1 {
+    font-size: 6rem;
+}
+
+.suit {
+    display: flex;
+    justify-content: start;
+    padding: 0 0.5rem;
+}
+
+.bottom-suit {
+    justify-content: end;
+}
+
+.bottom-suit > span {
+    transform: rotate(180deg);
 }
